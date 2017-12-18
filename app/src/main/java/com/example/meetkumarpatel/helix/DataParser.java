@@ -22,15 +22,11 @@ public class DataParser {
         String itemId = "--NA--";
         String msrp = "";
         String salesPrice = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         String itemImage = "";
-=======
+
         String reference = "";
->>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
-=======
-        String reference = "";
->>>>>>> origin/master
+
         try {
             if(!placeJson.isNull("name")){
                 name = placeJson.getString("name");
@@ -44,26 +40,18 @@ public class DataParser {
             if(!placeJson.isNull("salePrice")){
                 salesPrice = placeJson.getString("salePrice");
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             if(!placeJson.isNull("customerRatingImage")){
                 itemImage = placeJson.getString("customerRatingImage");
             }
-=======
->>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
-=======
->>>>>>> origin/master
+
             googleMap.put("name", name);
             googleMap.put("itemId",itemId);
             googleMap.put("msrp",msrp);
             googleMap.put("sales_price",salesPrice);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             googleMap.put("itemImage",itemImage);
-=======
->>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
-=======
->>>>>>> origin/master
+
         }
         catch (JSONException e)
         {
