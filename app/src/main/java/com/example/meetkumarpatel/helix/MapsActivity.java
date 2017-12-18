@@ -1,5 +1,6 @@
 package com.example.meetkumarpatel.helix;
 
+<<<<<<< HEAD
 import android.Manifest;
 
 import android.app.AlertDialog;
@@ -7,6 +8,15 @@ import android.app.AlertDialog;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
+=======
+import com.example.meetkumarpatel.helix.GetNearbyDeals;
+import android.Manifest;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ListActivity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,15 +28,24 @@ import android.location.Location;
 import android.location.LocationListener;
 
 import android.location.LocationManager;
+<<<<<<< HEAD
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
+=======
+import android.os.Build;
+import android.os.Handler;
+import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
+<<<<<<< HEAD
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -34,14 +53,32 @@ import android.widget.TextView;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
 
+=======
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+<<<<<<< HEAD
+=======
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -51,6 +88,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+=======
+import java.io.IOException;
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -66,9 +106,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     double latitude, longitude;
     LocationManager locationManager;
     TextView mDisplay;
+<<<<<<< HEAD
     private RecyclerView mRecyclerView;
     private DataBinder mAdapter;
     private static final String TAG = MapsActivity.class.getSimpleName();
+=======
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 
 
     @Override
@@ -83,7 +126,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+<<<<<<< HEAD
         //mDisplay = findViewById(R.id.progressBar);
+=======
+        mDisplay = findViewById(R.id.progressBar);
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
         mapFragment.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         if(locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
@@ -108,7 +155,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     Object[] dataTransfer = new Object[2];
                     dataTransfer[0] = mMap;
                     dataTransfer[1] = url;
+<<<<<<< HEAD
                     new GetNearbyDeals().execute(dataTransfer);
+=======
+
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
 
                     sendNotification();
                 } catch (IOException e) {
@@ -200,6 +251,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+<<<<<<< HEAD
     public class GetNearbyDeals extends AsyncTask<Object,String,String> {
         GoogleMap mMap;
         String url;
@@ -280,6 +332,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+=======
+>>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
