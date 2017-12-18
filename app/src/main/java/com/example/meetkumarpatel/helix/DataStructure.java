@@ -10,7 +10,10 @@ public class DataStructure {
     public String msrp;
     public String sales_price;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public String itemImage;
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
 }

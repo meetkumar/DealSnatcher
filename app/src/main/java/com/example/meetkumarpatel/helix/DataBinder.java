@@ -8,10 +8,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.support.v7.widget.CardView;
 =======
 
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+
+>>>>>>> origin/master
 import java.util.Collections;
 import java.util.List;
 
@@ -46,17 +50,23 @@ public class DataBinder extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         MyHolder myHolder = (MyHolder) holder;
         DataStructure current = data.get(position);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
         myHolder.textName.setText(current.name);
         myHolder.textItemId.setText("Id : "+current.itemId);
         myHolder.textMsrp.setText("MSRP : "+current.msrp);
         myHolder.textSales.setText("Sales Price : "+current.sales_price);
 <<<<<<< HEAD
+<<<<<<< HEAD
         myHolder.imageView.setImageResource(R.drawable.ic_launcher_foreground);
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
 
     }
 
@@ -67,34 +77,47 @@ public class DataBinder extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     class MyHolder extends RecyclerView.ViewHolder{
 <<<<<<< HEAD
+<<<<<<< HEAD
         CardView cv;
 =======
 
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+
+>>>>>>> origin/master
         TextView textName;
         TextView textItemId;
         TextView textMsrp;
         TextView textSales;
 <<<<<<< HEAD
+<<<<<<< HEAD
         ImageView imageView;
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
 
         // create constructor to get widget reference
         public MyHolder(View itemView) {
             super(itemView);
 <<<<<<< HEAD
+<<<<<<< HEAD
             cv = (CardView) itemView.findViewById(R.id.cv);
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
             textName= (TextView) itemView.findViewById(R.id.tv_display_name);
             textItemId= (TextView) itemView.findViewById(R.id.tv_display_itemId);
             textMsrp = (TextView) itemView.findViewById(R.id.tv_display_msrp);
             textSales = (TextView) itemView.findViewById(R.id.tv_sales);
 <<<<<<< HEAD
+<<<<<<< HEAD
             imageView = (ImageView) itemView.findViewById(R.id.item_image);
 =======
 >>>>>>> 7a76bfd260043ca929aa209d2284af603d746e12
+=======
+>>>>>>> origin/master
 
         }
 
